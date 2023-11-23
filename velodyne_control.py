@@ -23,7 +23,7 @@ def control_lidar(rpm):
     sensor = pycurl.Curl()
 
     # Set laser and RPM
-    if rpm > 0:
+    if rpm > 300:
         laser_state = 'on'
     else:
         laser_state = 'off'
