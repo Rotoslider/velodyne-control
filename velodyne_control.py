@@ -34,9 +34,10 @@ def control_lidar(rpm):
     if rc:
         rc, _ = sensor_do(sensor, Base_URL+'setting', urlencode({'rpm': str(rpm)}))
         if rc:
-           messagebox.showinfo("Success", f"LiDAR is set to {rpm} RPM with laser {laser_state}")
+            messagebox.showinfo("Success", f"LiDAR is set to {rpm} RPM with laser {laser_state}")
         else:
             messagebox.showerror("Error", "Failed to set LiDAR RPM")
+            
     else:
         messagebox.showerror("Error", "Failed to set LiDAR Laser")
 
