@@ -37,8 +37,8 @@ def control_lidar(rpm):
            messagebox.showinfo("Success", f"LiDAR is set to {rpm} RPM with laser {laser_state}")
         else:
             messagebox.showerror("Error", "Failed to set LiDAR RPM")
-     else:
-         messagebox.showerror("Error", "Failed to set LiDAR Laser")
+    else:
+        messagebox.showerror("Error", "Failed to set LiDAR Laser")
 
     sensor.close()
 
